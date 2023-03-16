@@ -1,0 +1,31 @@
+{
+  "name": "project-management-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddepu11t/project-management-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddepu11t/project-management-graphql/issues"
+  },
+  "homepage": "https://github.com/ddepu11t/project-management-graphql#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
