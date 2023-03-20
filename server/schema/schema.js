@@ -21,7 +21,6 @@ const ClientType = new GraphQLObjectType({
 });
 
 // Project Type
-
 const ProjectType = new GraphQLObjectType({
   name: "Project",
   fields: () => ({
@@ -29,6 +28,12 @@ const ProjectType = new GraphQLObjectType({
     name: { type: GraphQLString },
     description: { type: GraphQLString },
     status: { type: GraphQLString },
+    client: {
+      type: ClientType,
+      resolve(parent, args) {
+        return clients.find((client) => client.id === parent.clientId);
+      },
+    },
   }),
 });
 
