@@ -1,28 +1,43 @@
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 
-const GET_CLIENTS = gql`
-  query getClients {
-    clients {
-      id
-      name
-      email
-      phone
-    }
-  }
-`;
+import { GET_CLIENTS } from "../queries/clientQueries";
+import ClientRow from "./ClientRow";
+import Spinner from "./Spinner";
 
 const Clients = () => {
   const { loading, error, data } = useQuery(GET_CLIENTS);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Spinner />;
   }
 
   if (error) {
     return <p>Some thing went wrong</p>;
   }
 
-  return <>{!loading && !error ? <h1>Clients</h1> : null}</>;
+  return (
+    <>
+      {!loading && !error ? (
+        <>
+          <table className="table table-hover mt-3">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.clients.map((client) => {
+                return <ClientRow key={client.id} client={client} />;
+              })}
+            </tbody>
+          </table>
+        </>
+      ) : null}
+    </>
+  );
 };
 
 export default Clients;
