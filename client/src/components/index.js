@@ -6,3 +6,4 @@ export { default as AddClientsModal } from "./AddClientsModal";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as Projects } from "./Projects";
 export { default as ClientInfo } from "./ClientInfo";
+export { default as AddProjectModal } from "./AddProjectModal";
