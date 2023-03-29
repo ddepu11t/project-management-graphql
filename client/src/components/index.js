@@ -8,3 +8,4 @@ export { default as Projects } from "./Projects";
 export { default as ClientInfo } from "./ClientInfo";
 export { default as AddProjectModal } from "./AddProjectModal";
 export { default as DeleteProjectButton } from "./DeleteProjectButton";
+export { default as EditProjectForm } from "./EditProjectForm";
