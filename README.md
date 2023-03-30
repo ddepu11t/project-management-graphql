@@ -4,6 +4,10 @@
 
 ### A full stack MERN stack app, created to learn graphql(quries, mutations, cache,refetch).
 
+## Demo
+
+## [Live](https://project-management-graphql-production.up.railway.app/)
+
 ## Build locally
 
 1. Clone the repo
@@ -36,10 +40,6 @@ yarn dev
 
 cd client && yarn dev
 ```
-
-## Demo
-
-## [Live](https://project-management-graphql-production.up.railway.app/)
 
 ## Acknowledgement
 
