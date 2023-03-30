@@ -22,8 +22,14 @@ const cache = new InMemoryCache({
   },
 });
 
+console.log(process.env.NODE_ENV);
+
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql",
+  uri: `${
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:4000"
+      : "https://project-management-graphql-production.up.railway.app"
+  }/graphql`,
   cache,
 });
 
