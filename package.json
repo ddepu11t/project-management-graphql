@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd client yarn && yarn build && ../ && node server/index.js",
+    "start": "cd client yarn install && yarn build && ../ && node server/index.js",
     "dev": "node --watch server/index.js"
   },
   "repository": {
