@@ -43,4 +43,4 @@ cd client && yarn dev
 
 ## Acknowledgement
 
-### [Followed this Brad's video to create this project](https://youtu.be/BcLNfwF04Kw)
+### [Followed this video of brad to create the project](https://youtu.be/BcLNfwF04Kw)
