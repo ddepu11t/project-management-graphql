@@ -22,8 +22,6 @@ const cache = new InMemoryCache({
   },
 });
 
-console.log(process.env.NODE_ENV);
-
 const client = new ApolloClient({
   uri: `${
     process.env.NODE_ENV === "development"
