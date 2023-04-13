@@ -2,7 +2,7 @@
 
 ## Introduction
 
-#### A full stack MERN stack app, created to learn graphql(quries, mutations, cache,refetch). I have used `vite` to create react app. and it is deployed on `Railway app`.
+#### A full stack MERN app, created to learn graphql(quries, mutations, cache,refetch). I have used `vite` to create react app. and it is deployed on `Railway app`.
 
 ## Demo
 
